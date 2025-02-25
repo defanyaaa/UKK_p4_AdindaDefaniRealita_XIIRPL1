@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Diskon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Perhitungan Diskon</h1>
+        <form id="discountForm">
+            <div class="input-group">
+                <label for="nominal">Masukan Nominal:</label>
+                <input type="text" id="nominal" placeholder="Rp " required>
+            </div>
+            <div class="input-group">
+                <label for="diskon">Masukan Diskon (%)</label>
+                <input type="number" id="diskon" placeholder="Diskon" required>
+            </div>
+            <button type="submit">Hitung</button>
+            <button type="button" id="resetBTN">Reset</button>
+        </form>
+
+        <div id="result" class="result-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Deskripsi</th>
+                    <th>Jumlah</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hasil potongan</td>
+                    <td id="discountAmount"></td>
+                </tr>
+                <tr>
+                    <td>Jumlah yang harus di bayar</td>
+                    <td id="totalAmount"></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
